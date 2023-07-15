@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+	align-items: center;
+	list-style-type: none;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%  NAVIGATION BAR %%%%%%%%%%%%%%%%%%%%%%%*/
+nav {
+	background-color: #001C30;
+	width: 100%;
+	height: 4rem;
+	padding: 5px;
+	display: flex;
+}
+ 
+/* ===== navigation logo ===== */
+
+.nav-logo{
+	width: 40%;
+}
+.logo{
+	color: white;
+	padding-left: 2rem;
+}
+.nav-logo-letter{
+	background: -webkit-linear-gradient(#00FFCA,#00FFCA);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+
+/* ===== navigation link ===== */
+
+.nav-link-bar{
+	width: 60%;
+	margin-top: 10px;
+}
+.nav-links{
+	display: flex;
+}
+.nav-link{
+	margin: 0 auto;
+}
+.nav-link a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	color: #45CFDD;
+	font-weight: bold;
+}
+.nav-link a:hover {
+	color: white;
+	cursor: pointer;
+	border-bottom: 1px solid #00FFCA;
+	transition: 0.3s;
+}
+.menu {
+	display: none;
+}
+
+.hamburger{
+	width: 30px;
+  	height: 5px;
+  	background-image: linear-gradient(to left,#00FFCA,#009EFF);
+  	margin: 5px 0;
+  	border-radius: 3px;
+}
+
+@media (max-width:930px){
+	.nav-links{
+		display: none;
+	}
+	.menu {
+		display: block;
+		width: 40px;
+		height: 40px;
+		padding-left: 3px;
+		position: absolute;
+		top: 10px;
+		right: 15px;
+	}
+	.menu:hover {
+		cursor: pointer;
+	}
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%  FRONT PAGE %%%%%%%%%%%%%%%%%%%%%%%*/
+#front-page{
+	background-color: #001C30;
+	width: 100%;
+	height: 40rem;
+	overflow: hidden;
+}
+
+/* ===== Boxes ===== */
+
+.box1, .box2, .box3{
+	width: 200px;
+	height: 200px;
+	background-image: linear-gradient(#00FFCA,#00FFCA,#009EFF,#009EFF);
+	border-radius: 30%;
+	transform: rotate(-45deg);
+	position: relative;
+}
+.box1{
+	top: 7rem;
+	left: -7rem;
+}
+.box2{	
+	top: 11rem;
+	left: -4rem;
+	transform: rotate(135deg);
+}
+.box3{
+	top: -11rem;
+	left: 6rem;
+}
+
+/* ===== title ===== */
+.title{
+	color: white;
+	font-size: 9.5rem;
+	position: relative;
+	bottom: 23.8rem;
+	left: 7.5rem;
+	letter-spacing: 5px;
+}
+.slogan{
+	background: linear-gradient(45deg,#00FFCA,#00FFCA,#009EFF,#00FFCA);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	font-size: 2rem;
+	letter-spacing: 3px;
+	width: 700px;
+	position: relative;
+	bottom: 23.8rem;
+	left: 20rem;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%*/
+footer {
+	width: 100;
+	padding: 1rem 3rem;
+	height: auto;
+	background-color: black;
+}
+.footer-item{
+	color: white;
+	margin: 3rem 0;
+}
+.footer-links{
+	display: flex;
+	margin-left: -3.5rem;
+}
+
+.footer-link a{
+	color: white;
+	font-size: 1.5rem;
+	margin: 0 1.5rem;
+	text-decoration: none;
+}
+
+.footer-link a:hover{
+	background: linear-gradient(to left,#00FFCA,#00FFCA);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
